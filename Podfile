@@ -1,5 +1,3 @@
-source 'https://cocoapods-cdn.netlify.app/'
-
 platform :ios, '11.0'
 use_frameworks!
 inhibit_all_warnings!
@@ -37,6 +35,9 @@ target 'MAXExample' do
   # Development
   pod 'SwiftLint'
   pod 'Wormholy', :configurations => ['Debug Staging', 'Debug Production']
+  
+  # Monetization
+  pod 'AppLovinSDK'
 
   target 'MAXExampleTests' do
     inherit! :search_paths

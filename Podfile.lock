@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.2.2)
+  - AppLovinSDK (11.3.3)
   - Differentiator (4.0.1)
   - Firebase/CoreOnly (6.33.0):
     - FirebaseCore (= 6.10.3)
@@ -87,6 +88,7 @@ PODS:
   - Wormholy (1.6.3)
 
 DEPENDENCIES:
+  - AppLovinSDK
   - Firebase/Crashlytics
   - IQKeyboardManagerSwift
   - KeychainAccess
@@ -142,6 +144,8 @@ SPEC REPOS:
     - SwiftFormat
     - SwiftLint
     - Wormholy
+  trunk:
+    - AppLovinSDK
 
 EXTERNAL SOURCES:
   NimbleExtension:
@@ -155,6 +159,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  AppLovinSDK: 6ed446d284d8852520a786ad5a91796f1730c3f3
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Firebase: 8db6f2d1b2c5e2984efba4949a145875a8f65fe5
   FirebaseCore: d889d9e12535b7f36ac8bfbf1713a0836a3012cd
@@ -188,6 +193,6 @@ SPEC CHECKSUMS:
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
   Wormholy: bfc1c8679eefd0edd92638758e21c3961b1b3b50
 
-PODFILE CHECKSUM: 21b69ad2a1984ecfafcdb14c95a5415baa06cba3
+PODFILE CHECKSUM: 69260e3fd8205b0adec8941165f0fefa34285b26
 
 COCOAPODS: 1.11.3

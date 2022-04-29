@@ -19,15 +19,21 @@
 		4C86A980032367561AD54098 /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6713D0B3261240AFB2BB1 /* RequestConfiguration.swift */; };
 		54EDADE691C94616767F821D /* Pods_MAXExample_MAXExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0ED310A29B53F143E30C081 /* Pods_MAXExample_MAXExampleUITests.framework */; };
 		6EA4DDE3DC4256A1D0B36FAE /* NetworkAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002CE4DC298179A1C2910E /* NetworkAPIProtocol.swift */; };
+		70B4546BA38338E2D6AA8CB0 /* AppLovinQualityService.xcframework in AppLovinQualityService Embed Framework */ = {isa = PBXBuildFile; fileRef = 49EF462F7B818281CA64AC13 /* AppLovinQualityService.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7CF73F60B19A6A2DAE5F5602 /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB4F27653AF58B6F6C21B74 /* UIView+Subviews.swift */; };
 		8BEFE34DE8053BE4BD1A41A6 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AC38BCAF769C69C005071 /* NetworkAPI.swift */; };
 		9BAF611E22E77D16C3C90A80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54180CE5D793F1A53B610C14 /* Constants.swift */; };
 		A3C5DB018296CC596EAC0409 /* OptionalUnwrapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919941F627B7B80C7623CBD9 /* OptionalUnwrapSpec.swift */; };
 		B311C2492161383CF3E5C787 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800FCDF630543F4AE370F94 /* Typealiases.swift */; };
+		BA27B246281B9583007EB5E5 /* MAXExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B243281B9583007EB5E5 /* MAXExampleViewController.swift */; };
+		BA27B247281B9583007EB5E5 /* MAXExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B244281B9583007EB5E5 /* MAXExampleViewModel.swift */; };
+		BA27B248281B9583007EB5E5 /* MAXExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA27B245281B9583007EB5E5 /* MAXExampleViewController.storyboard */; };
+		BA27B24A281B9E7B007EB5E5 /* App+DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B249281B9E7B007EB5E5 /* App+DI.swift */; };
 		BB58272843D39BAF9615B93E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7913AE08E6F813D5609BC /* HomeViewController.swift */; };
 		BBE4E7D0D2D6513F3176F452 /* NetworkAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B00A423A4AE76557200261 /* NetworkAPIError.swift */; };
 		CCBC88DE8A151EF7DE0FBF57 /* ApplicationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E47059410ACCF2F6979600 /* ApplicationSpec.swift */; };
 		D88972CF7F9116A6D58C933C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF8FA9768E6508FA89BBE37 /* AppDelegate.swift */; };
+		DEE5BE619E88E73239F47912 /* AppLovinQualityService.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF462F7B818281CA64AC13 /* AppLovinQualityService.xcframework */; };
 		EBEE139F8D169C8C4D0F0EBD /* Optional+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6E2DE15E172498CC81F7 /* Optional+Unwrap.swift */; };
 		EE459C3E593A6A32C04556F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A9BB09896F973220607D59 /* Assets.xcassets */; };
 		F47DAF1287C5149D6166E6F7 /* Color+Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB380A31618D915CCA41D030 /* Color+Application.swift */; };
@@ -52,6 +58,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		01B94FE7FAA669BCCC84ED9C /* AppLovinQualityService Embed Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				70B4546BA38338E2D6AA8CB0 /* AppLovinQualityService.xcframework in AppLovinQualityService Embed Framework */,
+			);
+			name = "AppLovinQualityService Embed Framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15129148A386F4FDCEDB8910 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,6 +120,7 @@
 		39A5D3BD9B2B8059BEA3DA59 /* Pods-MAXExampleTests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAXExampleTests.release staging.xcconfig"; path = "Target Support Files/Pods-MAXExampleTests/Pods-MAXExampleTests.release staging.xcconfig"; sourceTree = "<group>"; };
 		3BDC270F89E7D8C9BA484A73 /* MAXExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAXExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44476A8B283FB15094175C26 /* ReleaseProduction.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseProduction.xcconfig; sourceTree = "<group>"; };
+		49EF462F7B818281CA64AC13 /* AppLovinQualityService.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = AppLovinQualityService.xcframework; path = AppLovinQualityService/AppLovinQualityService.xcframework; sourceTree = "<group>"; };
 		4F08C176ED7C886E7FA9EF02 /* Pods-MAXExampleTests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAXExampleTests.debug staging.xcconfig"; path = "Target Support Files/Pods-MAXExampleTests/Pods-MAXExampleTests.debug staging.xcconfig"; sourceTree = "<group>"; };
 		4FB6713D0B3261240AFB2BB1 /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
 		5267CCA7C709195646B1AB45 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,6 +143,10 @@
 		A5B07E46C47ECE57056C7382 /* Pods-MAXExampleTests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAXExampleTests.debug production.xcconfig"; path = "Target Support Files/Pods-MAXExampleTests/Pods-MAXExampleTests.debug production.xcconfig"; sourceTree = "<group>"; };
 		A60B2BE83471316986948C91 /* Pods-MAXExample-MAXExampleUITests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAXExample-MAXExampleUITests.debug staging.xcconfig"; path = "Target Support Files/Pods-MAXExample-MAXExampleUITests/Pods-MAXExample-MAXExampleUITests.debug staging.xcconfig"; sourceTree = "<group>"; };
 		B7B00A423A4AE76557200261 /* NetworkAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIError.swift; sourceTree = "<group>"; };
+		BA27B243281B9583007EB5E5 /* MAXExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAXExampleViewController.swift; sourceTree = "<group>"; };
+		BA27B244281B9583007EB5E5 /* MAXExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAXExampleViewModel.swift; sourceTree = "<group>"; };
+		BA27B245281B9583007EB5E5 /* MAXExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MAXExampleViewController.storyboard; sourceTree = "<group>"; };
+		BA27B249281B9E7B007EB5E5 /* App+DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+DI.swift"; sourceTree = "<group>"; };
 		BB380A31618D915CCA41D030 /* Color+Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Application.swift"; sourceTree = "<group>"; };
 		BDF8FA9768E6508FA89BBE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3435B8906BC7F746098707F /* Pods-MAXExample.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAXExample.debug production.xcconfig"; path = "Target Support Files/Pods-MAXExample/Pods-MAXExample.debug production.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE5BE619E88E73239F47912 /* AppLovinQualityService.xcframework in Frameworks */,
 				3126E22120A14AFD4333F33D /* Pods_MAXExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF8FA9768E6508FA89BBE37 /* AppDelegate.swift */,
+				BA27B249281B9E7B007EB5E5 /* App+DI.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -311,6 +335,7 @@
 		22814591146F5B46C4A691BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BA27B245281B9583007EB5E5 /* MAXExampleViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,6 +352,8 @@
 			isa = PBXGroup;
 			children = (
 				62D7913AE08E6F813D5609BC /* HomeViewController.swift */,
+				BA27B243281B9583007EB5E5 /* MAXExampleViewController.swift */,
+				BA27B244281B9583007EB5E5 /* MAXExampleViewModel.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -653,6 +680,14 @@
 			path = Plists;
 			sourceTree = "<group>";
 		};
+		F1EA664A50FCEEB5524D7657 /* AppLovinQualityService */ = {
+			isa = PBXGroup;
+			children = (
+				49EF462F7B818281CA64AC13 /* AppLovinQualityService.xcframework */,
+			);
+			name = AppLovinQualityService;
+			sourceTree = "<group>";
+		};
 		F9CF34B5A572BE20777007BB = {
 			isa = PBXGroup;
 			children = (
@@ -660,6 +695,7 @@
 				B1FD7838830AB36F3985F027 /* Frameworks */,
 				361A6EC8A7A37E55C3EA43B1 /* Products */,
 				D85659D9B22A9A484398476B /* Pods */,
+				F1EA664A50FCEEB5524D7657 /* AppLovinQualityService */,
 			);
 			sourceTree = "<group>";
 		};
@@ -698,6 +734,7 @@
 				15129148A386F4FDCEDB8910 /* Embed Frameworks */,
 				77AC34B71B347E57A762EF9C /* Frameworks */,
 				E01CD11B5D44ADBFCB39D5B7 /* [CP] Embed Pods Frameworks */,
+				F9A9BBEED19E594BEE989745 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -713,6 +750,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 537C42BB1DE0543CCBC14864 /* Build configuration list for PBXNativeTarget "MAXExample" */;
 			buildPhases = (
+				04BF6C061D02B1F432BD8115 /* AppLovinQualityService Updater */,
 				BF586E30942A79CF078C227E /* [CP] Check Pods Manifest.lock */,
 				349E8B329F67FD9C33E40BB2 /* Sourcery */,
 				F5CFC9E6D8C93E38476C68C3 /* R.swift */,
@@ -724,6 +762,9 @@
 				0BC1A39DAF0E3ED791DD4C63 /* Frameworks */,
 				DF7A703D7CCBB543E11EDEA0 /* Copy GoogleService-Info.plist */,
 				7CBADB74FA529479ACD4B4DB /* [CP] Embed Pods Frameworks */,
+				CBF8885033C698932E9197AA /* [CP] Copy Pods Resources */,
+				01B94FE7FAA669BCCC84ED9C /* AppLovinQualityService Embed Framework */,
+				78CB6B6E091687FDE42AD696 /* AppLovinQualityService */,
 			);
 			buildRules = (
 			);
@@ -776,6 +817,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE459C3E593A6A32C04556F3 /* Assets.xcassets in Resources */,
+				BA27B248281B9583007EB5E5 /* MAXExampleViewController.storyboard in Resources */,
 				04918127FFB28E15DC549079 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,6 +839,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04BF6C061D02B1F432BD8115 /* AppLovinQualityService Updater */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "AppLovinQualityService Updater";
+			outputPaths = (
+				AppLovinQualityService/AppLovinQualityServicePlugin.app,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ruby \"AppLovinQualityServiceSetup-ios.rb\" update";
+		};
 		349E8B329F67FD9C33E40BB2 /* Sourcery */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -832,6 +890,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ -z \"$CI\" ]; then\n    \"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT\" --lint --lenient\nfi";
+		};
+		78CB6B6E091687FDE42AD696 /* AppLovinQualityService */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				AppLovinQualityService/AppLovinQualityServicePlugin.app,
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+				"$(TARGET_BUILD_DIR)/$(FRAMEWORKS_FOLDER_PATH)/UnityFramework.framework/UnityFramework",
+			);
+			name = AppLovinQualityService;
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_FOLDER_PATH)/.AppLovinQualityService/AppLovinQualityService.json",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "AppLovinQualityService/AppLovinQualityServicePlugin.app/Contents/MacOS/AppLovinQualityServicePlugin \"AppLovinQualityServiceSetup-ios.rb\"";
 		};
 		7CBADB74FA529479ACD4B4DB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -910,6 +987,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBF8885033C698932E9197AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAXExample/Pods-MAXExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAXExample/Pods-MAXExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MAXExample/Pods-MAXExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7F2D47C53C6768516147728 /* [CP] Embed Pods Frameworks */ = {
@@ -1007,6 +1101,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$PROJECT_NAME/Sources/Supports/Helpers/Rswift/R.generated.swift\"\n";
 		};
+		F9A9BBEED19E594BEE989745 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAXExample-MAXExampleUITests/Pods-MAXExample-MAXExampleUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MAXExample-MAXExampleUITests/Pods-MAXExample-MAXExampleUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MAXExample-MAXExampleUITests/Pods-MAXExample-MAXExampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FF267F1AC317B3F7CAB51B9B /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1040,9 +1151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA27B24A281B9E7B007EB5E5 /* App+DI.swift in Sources */,
+				BA27B246281B9583007EB5E5 /* MAXExampleViewController.swift in Sources */,
 				D88972CF7F9116A6D58C933C /* AppDelegate.swift in Sources */,
 				1ABAFDB7C7E6871243B74DD3 /* Constants+API.swift in Sources */,
 				9BAF611E22E77D16C3C90A80 /* Constants.swift in Sources */,
+				BA27B247281B9583007EB5E5 /* MAXExampleViewModel.swift in Sources */,
 				BBE4E7D0D2D6513F3176F452 /* NetworkAPIError.swift in Sources */,
 				6EA4DDE3DC4256A1D0B36FAE /* NetworkAPIProtocol.swift in Sources */,
 				4C86A980032367561AD54098 /* RequestConfiguration.swift in Sources */,
@@ -1126,6 +1240,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppLovinQualityService",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1279,6 +1397,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppLovinQualityService",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1379,11 +1501,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MAXExample/Configurations/Plists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.max;
 				PRODUCT_NAME = MAXExample;
@@ -1403,11 +1533,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MAXExample/Configurations/Plists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.max;
 				PRODUCT_NAME = MAXExample;
@@ -1428,11 +1566,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MAXExample/Configurations/Plists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.max;
 				PRODUCT_NAME = MAXExample;
@@ -1484,6 +1630,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppLovinQualityService",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1505,11 +1655,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MAXExample/Configurations/Plists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.max;
 				PRODUCT_NAME = MAXExample;
@@ -1562,6 +1720,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppLovinQualityService",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;

@@ -8,6 +8,6 @@ extension Navigator {
 
     enum Scene {
         // Define scene
-        case home
+        case maxExample
     }
 }
