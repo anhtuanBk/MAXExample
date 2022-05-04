@@ -30,7 +30,7 @@ target 'MAXExample' do
   pod 'IQKeyboardManagerSwift'
   pod 'NimbleExtension', :git => 'https://github.com/nimblehq/NimbleExtension', :branch => 'master'
   pod 'R.swift'
-  pod 'Resolver' # Needs Cocoapods on iOS 11 to support Resolver
+  pod 'Resolver', '~> 1.2' # Needs Cocoapods on iOS 11 to support Resolver
 
   # Development
   pod 'SwiftLint'

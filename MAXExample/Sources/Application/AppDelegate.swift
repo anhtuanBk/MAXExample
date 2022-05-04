@@ -19,7 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         sdk?.mediationProvider = "max"
         sdk?.userIdentifier = UUID().uuidString
         sdk?.initializeSdk { (configuration: ALSdkConfiguration) in
-            
+            print("App transparency tracking authorization: \(configuration.appTrackingTransparencyStatus)")
         }
         
         let maxVC = MAXExampleViewController.create() ?? UIViewController()

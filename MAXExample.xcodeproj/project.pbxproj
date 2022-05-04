@@ -29,6 +29,9 @@
 		BA27B247281B9583007EB5E5 /* MAXExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B244281B9583007EB5E5 /* MAXExampleViewModel.swift */; };
 		BA27B248281B9583007EB5E5 /* MAXExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA27B245281B9583007EB5E5 /* MAXExampleViewController.storyboard */; };
 		BA27B24A281B9E7B007EB5E5 /* App+DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA27B249281B9E7B007EB5E5 /* App+DI.swift */; };
+		BA407F012822BA5000C4BFC6 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA407F002822BA5000C4BFC6 /* AdManager.swift */; };
+		BA407F032822BF1700C4BFC6 /* InterstitialAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA407F022822BF1700C4BFC6 /* InterstitialAdManager.swift */; };
+		BA407F052822D0B500C4BFC6 /* RewardedAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA407F042822D0B500C4BFC6 /* RewardedAdManager.swift */; };
 		BB58272843D39BAF9615B93E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7913AE08E6F813D5609BC /* HomeViewController.swift */; };
 		BBE4E7D0D2D6513F3176F452 /* NetworkAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B00A423A4AE76557200261 /* NetworkAPIError.swift */; };
 		CCBC88DE8A151EF7DE0FBF57 /* ApplicationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E47059410ACCF2F6979600 /* ApplicationSpec.swift */; };
@@ -147,6 +150,9 @@
 		BA27B244281B9583007EB5E5 /* MAXExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAXExampleViewModel.swift; sourceTree = "<group>"; };
 		BA27B245281B9583007EB5E5 /* MAXExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MAXExampleViewController.storyboard; sourceTree = "<group>"; };
 		BA27B249281B9E7B007EB5E5 /* App+DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+DI.swift"; sourceTree = "<group>"; };
+		BA407F002822BA5000C4BFC6 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		BA407F022822BF1700C4BFC6 /* InterstitialAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdManager.swift; sourceTree = "<group>"; };
+		BA407F042822D0B500C4BFC6 /* RewardedAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdManager.swift; sourceTree = "<group>"; };
 		BB380A31618D915CCA41D030 /* Color+Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Application.swift"; sourceTree = "<group>"; };
 		BDF8FA9768E6508FA89BBE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3435B8906BC7F746098707F /* Pods-MAXExample.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAXExample.debug production.xcconfig"; path = "Target Support Files/Pods-MAXExample/Pods-MAXExample.debug production.xcconfig"; sourceTree = "<group>"; };
@@ -326,6 +332,7 @@
 		2020888EA68F1E374A392942 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				BA407EFF2822B9C100C4BFC6 /* AdManager */,
 				092B4D578F1637A15CAA01DB /* Extensions */,
 				14629983FD3EBE56D9F98E92 /* Helpers */,
 			);
@@ -630,6 +637,16 @@
 			path = MAXExampleTests;
 			sourceTree = "<group>";
 		};
+		BA407EFF2822B9C100C4BFC6 /* AdManager */ = {
+			isa = PBXGroup;
+			children = (
+				BA407F002822BA5000C4BFC6 /* AdManager.swift */,
+				BA407F022822BF1700C4BFC6 /* InterstitialAdManager.swift */,
+				BA407F042822D0B500C4BFC6 /* RewardedAdManager.swift */,
+			);
+			path = AdManager;
+			sourceTree = "<group>";
+		};
 		C3B20B91DDE15C8B252EB3D1 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,12 +767,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 537C42BB1DE0543CCBC14864 /* Build configuration list for PBXNativeTarget "MAXExample" */;
 			buildPhases = (
-				04BF6C061D02B1F432BD8115 /* AppLovinQualityService Updater */,
 				BF586E30942A79CF078C227E /* [CP] Check Pods Manifest.lock */,
+				04BF6C061D02B1F432BD8115 /* AppLovinQualityService Updater */,
 				349E8B329F67FD9C33E40BB2 /* Sourcery */,
 				F5CFC9E6D8C93E38476C68C3 /* R.swift */,
-				FF267F1AC317B3F7CAB51B9B /* SwiftLint */,
-				73EB1F739C3F16785F729595 /* SwiftFormat Lint */,
 				7D6A7C46E909318F81100607 /* Sources */,
 				6AB88A8083E58D365AA6DEDA /* Resources */,
 				458C6EA9D26E5968ADE90116 /* Embed Frameworks */,
@@ -872,24 +887,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/Sourcery/bin/sourcery\"";
-		};
-		73EB1F739C3F16785F729595 /* SwiftFormat Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "SwiftFormat Lint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ -z \"$CI\" ]; then\n    \"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT\" --lint --lenient\nfi";
 		};
 		78CB6B6E091687FDE42AD696 /* AppLovinQualityService */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1118,24 +1115,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MAXExample-MAXExampleUITests/Pods-MAXExample-MAXExampleUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF267F1AC317B3F7CAB51B9B /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ -z \"$CI\" ]; then\n    ${PODS_ROOT}/SwiftLint/swiftlint\nfi";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1159,7 +1138,10 @@
 				BA27B247281B9583007EB5E5 /* MAXExampleViewModel.swift in Sources */,
 				BBE4E7D0D2D6513F3176F452 /* NetworkAPIError.swift in Sources */,
 				6EA4DDE3DC4256A1D0B36FAE /* NetworkAPIProtocol.swift in Sources */,
+				BA407F032822BF1700C4BFC6 /* InterstitialAdManager.swift in Sources */,
+				BA407F012822BA5000C4BFC6 /* AdManager.swift in Sources */,
 				4C86A980032367561AD54098 /* RequestConfiguration.swift in Sources */,
+				BA407F052822D0B500C4BFC6 /* RewardedAdManager.swift in Sources */,
 				8BEFE34DE8053BE4BD1A41A6 /* NetworkAPI.swift in Sources */,
 				3144E6741C94C6C41BF874D3 /* UseCaseFactoryProtocol.swift in Sources */,
 				BB58272843D39BAF9615B93E /* HomeViewController.swift in Sources */,

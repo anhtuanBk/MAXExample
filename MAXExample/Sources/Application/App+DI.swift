@@ -11,6 +11,13 @@ import Resolver
 
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {
+        defaultScope = .graph
         register { DefaultMAXExampleViewModel() }.implements(MAXExampleViewModel.self)
+        register { _, args in
+            InterstitialAdManager(_with: args("adUnitId"), retryAttempt: args("retryAttempt"))
+        }
+        register { _, args in
+            RewardedAdManager(_with: args("adUnitId"), retryAttempt: args("retryAttempt"))
+        }
     }
 }
